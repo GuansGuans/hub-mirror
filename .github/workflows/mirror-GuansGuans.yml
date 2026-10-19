@@ -1,4 +1,4 @@
-name: mirror-coolephp
+name: mirror-GuansGuans
 
 on:
   push:
@@ -15,29 +15,29 @@ jobs:
         id: repo
         uses: yi-Xu-0100/repo-list-generator@v1.1.1
         with:
-          user: coolephp
+          user: GuansGuans
 
       - name: Mirror hub with cache and list
         uses: Yikun/hub-mirror-action@v1.5
         with:
-          src: github/coolephp
-          dst: gitee/coolephp
+          src: github/GuansGuans
+          dst: gitee/GuansGuans
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           static_list: '${{ steps.repo.outputs.repoList }}'
-          black_list: 'foo,bar'
+          black_list: 'jetbrains-agent'
           cache_path: /github/workspace/hub-mirror-cache
-          account_type: org
+          account_type: user
           force_update: true
 
       - name: Print cache path
         run: |
           ls -la ${{ github.workspace }}/hub-mirror-cache
-  keepalive-schedule-job:
-    name: Keepalive schedule job
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-    steps:
-      - uses: actions/checkout@v7
-#      - uses: gautamkrishnar/keepalive-workflow@v2
+  # keepalive-schedule-job:
+  #   name: Keepalive schedule job
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     actions: write
+  #   steps:
+  #     - uses: actions/checkout@v7
+  #     - uses: gautamkrishnar/keepalive-workflow@v2

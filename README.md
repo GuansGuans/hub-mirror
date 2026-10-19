@@ -2,9 +2,7 @@
 
 > Sync GitHub repos to other hub.
 
-[![mirror-guanguans](https://github.com/guanguans/hub-mirror/actions/workflows/mirror-guanguans.yml/badge.svg)](https://github.com/guanguans/hub-mirror/actions/workflows/mirror-guanguans.yml)
-[![mirror-coolephp](https://github.com/guanguans/hub-mirror/actions/workflows/mirror-coolephp.yml/badge.svg)](https://github.com/guanguans/hub-mirror/actions/workflows/mirror-coolephp.yml)
-[![mirror-folkstory](https://github.com/guanguans/hub-mirror/actions/workflows/mirror-folkstory.yml/badge.svg)](https://github.com/guanguans/hub-mirror/actions/workflows/mirror-folkstory.yml)
+[![mirror-GuansGuans](https://github.com/GuansGuans/hub-mirror/actions/workflows/mirror-GuansGuans.yml/badge.svg)](https://github.com/GuansGuans/hub-mirror/actions/workflows/mirror-GuansGuans.yml)
 
 ## License
 
